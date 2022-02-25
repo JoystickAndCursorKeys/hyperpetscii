@@ -1,0 +1,92 @@
+<html>
+<head>
+
+	<title>HyperPetscii</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link rel="icon" href="res/img/icon/index.png">
+
+	<style>
+  .outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+		cursor: url('res/img/mouse-white.png'), auto;
+  }
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+	.inner2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+		background-color: #2255ff;
+  }
+
+	textarea {
+		width: 100%;
+		height: 100vh;
+	}
+
+
+	</style>
+
+</head>
+<body bgcolor=#000000>
+
+<div class="outer" id="outerdiv">
+
+<div class="middle" id="middlediv">
+	<div id=exporttxt class=inner2 hidden><input value="Close" type=button
+			onclick="document.getElementById( 'exporttxt' ).setAttribute('hidden','true');document.getElementById( 'mainconsole' ).removeAttribute('hidden');">
+			<br>
+			<textarea width=100% id=exporttxtdata onclick="this.focus();this.select()" readonly="readonly"></textarea>
+	</div>
+<table class="inner" id="mainconsole"><tr>
+<td align=right valign=top>
+  <div id="console"/></div>
+</td>
+<td align=left valign=top>
+  <div id="console2"></div>
+		<a width=100% hidden href=# name="imageSaver" id="imageSaver">Save</a>
+		<input hidden name="imageLoader" id="imageLoader" type="file" onclick="this.value=null;"></input>
+</td>
+</tr>
+<tr id="debugSwitch" style="display: none">
+	<td colspan=2>
+		<div id="debugDiv"></div>
+	</td>
+</tr>
+</table>
+</div>
+</div>
+
+<script src="script/ulib/c64blockfont.js"></script>
+<script src="script/ulib/petsciiscreen.js"></script>
+<script src="script/ulib/petsciigui.js"></script>
+<script src="script/ulib/importexport.js"></script>
+<script src="script/ulib/textpaintarea.js"></script>
+<script src="script/ulib/petscii.js"></script>
+<script src="script/controller.js"></script>
+<script src="script/init.js"></script>
+
+<script>
+
+init();
+
+</script>
+
+</body>
+</html>

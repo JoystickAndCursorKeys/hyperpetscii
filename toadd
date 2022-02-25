@@ -1,0 +1,49 @@
+-Menus
+  -File
+    -New
+    -Load
+    -Save
+    -Change Dimensions
+  -Edit
+    Tools
+      Clr
+      Draw
+      Erase
+      Select Char
+        All
+        Text
+        Lines
+        Gradients
+        Pictograms
+
+      Select Color
+        Foreground
+        Background
+
+
+      DrawBox
+        Boxes1 - Selected Char
+        Boxes2 - Lines1
+        Boxes2 - Lines2 square
+        Boxes3 - Lines3 round
+        Boxes4 - Chunky Pixels
+        Boxes5 - Extra Chunky
+
+      DrawLine
+        Selected
+        Chunky
+        Extra Chunky
+        Lines
+
+      Fill
+        Fill char
+
+      Write Text
+        Normal
+        Invert
+        Font1
+        Font2
+
+      Copy
+
+      Undo/Redo
