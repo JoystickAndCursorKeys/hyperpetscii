@@ -1,3 +1,3 @@
 # hyperpetscii
 
-Check the WIKI for more information.
+Check https://github.com/JoystickAndCursorKeys/hyperpetscii/wiki for more information.
